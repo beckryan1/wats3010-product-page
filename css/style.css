@@ -139,6 +139,10 @@ ul.page-links {
     position: absolute;
 }
 
+.apilogo {
+    display: flex;
+    padding: 20px;
+}
 nav {
     position: relative;
     height: 100px;
@@ -147,6 +151,7 @@ nav {
 .nav-right {
     
     position: absolute;
+    padding: 30px;
     right: 0;
     top: 0;
 }
