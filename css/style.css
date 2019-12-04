@@ -11,6 +11,9 @@ body {
     padding-top: 15px;
     padding-bottom: 50px;
     color: rgb(0, 0, 0);
+    background-image: url("../assets/images/office.jpg");
+    background-size: cover;
+
 }
 
 /* Normalize */
@@ -157,9 +160,8 @@ ul.social-links {
 nav {
     position: relative;
     height: 85px;
-    background-color: rgb(15, 6, 129);
+    background-color: rgba(17, 168, 42, 0.3);
     border-radius: 10px;
-    opacity: 60%;
     padding: 0px;
 }
 
@@ -202,8 +204,9 @@ nav {
 
 .col {
     display: table-cell;
-    border: 1px solid lightgray;
+    border: 0px;
     border-radius: 10px;
+    background-color: rgba(255, 245, 245, .6);
 }
 
 .col p {
@@ -234,8 +237,7 @@ nav {
 
 footer {
     border-radius: 10px;
-    background-color: rgb(17, 168, 42);
-    opacity: 60%;
+    background-color: rgba(17, 168, 42, .3);
     height: 4rem;
     color: white;
     padding: 20px;
