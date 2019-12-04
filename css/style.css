@@ -1,6 +1,10 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
+html {
+    background: (assets/images/office.jpg); no-repeat center fixed;
+    background-size: cover;
+}
 
 body {
     text-align: center;
@@ -13,44 +17,41 @@ body {
 body {
     height: 100%;
 }
+
 * {
     box-sizing: border-box;
 }
 
-html { 
-    background: src:"assets/images/office.jpg" no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 
 h1 {
     color: rgb(255, 255, 255);
-    }
+}
 
-h2, 
-h3, 
-h4, 
-h5, 
+h2,
+h3,
+h4,
+h5,
 h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    padding:0;
+    padding: 0;
     line-height: 1.2em;
     text-transform: uppercase;
 }
 
 h4 {
-    padding: 5px;
+    padding: 3px;
 }
 
 ul {
     margin: 0;
     padding: 0;
 }
+
 main {
     margin: 0 20px;
 }
+
 p {
     padding: 0 5px;
 }
@@ -58,12 +59,13 @@ p {
 /* Type */
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     font-size: 3rem;
 }
+
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0;
     padding: 0 10px 15px 10px;
     letter-spacing: .2rem;
@@ -71,68 +73,76 @@ h2 {
 }
 
 p,
-    nav,
-    div,
-    a,
-    figcaption,
-    span {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+nav,
+div,
+a,
+figcaption,
+span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /* page links */
 
 ul.page-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
 .page-links li {
     float: left;
-  }
-  .page-links a {
+}
+
+.page-links a {
     display: block;
     background-color: black;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  .page-links a:hover {
+}
+
+.page-links a:hover {
     background-color: gray;
     color: white;
-  }
+}
 
-  .page-links .active {
-    background-color:#2eb335;
+.page-links .active {
+    background-color: #2eb335;
     color: black;
-  }
+}
 
-  ul.social-links {
+ul.social-links {
     list-style-type: none;
     /* trick to getting text to center */
     /* set height = line-height */
     height: 48px;
     line-height: 48px;
 }
+
 .social-links li {
     display: inline-block;
+    border-radius: 10px;
+    height: 50px;
     width: 5rem;
     background-color: #3dcc61;
     text-align: center;
 }
+
 .social-links a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-  .social-links a:hover {
-      color: white;
-  }
-  .social-links li:hover {
-      background-color: rgb(34, 23, 182);
-  }
+.social-links a:hover {
+    color: rgb(22, 9, 134);
+}
+
+.social-links li:hover {
+    background-color: rgb(20, 146, 30);
+}
 
 /* Nav */
 .logo {
@@ -141,17 +151,22 @@ ul.page-links {
 
 .apilogo {
     display: flex;
-    padding: 20px;
+    padding: 12px;
 }
+
 nav {
     position: relative;
-    height: 100px;
+    height: 85px;
     background-color: rgb(15, 6, 129);
+    border-radius: 10px;
+    opacity: 60%;
+    padding: 0px;
 }
+
 .nav-right {
-    
+
     position: absolute;
-    padding: 30px;
+    padding: 20px;
     right: 0;
     top: 0;
 }
@@ -179,51 +194,63 @@ nav {
     table-layout: fixed;
     border-collapse: separate;
     border-spacing: 10px;
-  }
+}
+
 .row {
     display: table-row;
- }
- .col {
-       display: table-cell;
-       border: 1px solid lightgray;
-       border-radius: 10px;
-   }
+}
 
-   .col p {
-       font-size: 1rem;
-   }
-   .wrapped {
+.col {
+    display: table-cell;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.col p {
+    font-size: 1rem;
+}
+
+.wrapped {
     display: block;
     float: left;
     padding: 5px;
 }
+
 .cta {
     width: 11rem;
     margin: auto;
-    text-align:center;
+    text-align: justify;
 }
+
 .cta-button {
     display: block;
+    width: 100px;
     height: 40px;
-    line-height: 40px;
-    background: red;
-    color: white;
-    border-radius: 30px;
+    line-height: 20px;
+    background: rgb(17, 168, 42);
+    color: rgb(20, 18, 116);
+    border-radius: 10px;
 }
+
 footer {
-    background-color: #333;
+    border-radius: 10px;
+    background-color: rgb(17, 168, 42);
+    opacity: 60%;
     height: 4rem;
     color: white;
     padding: 20px;
-    position: relative;
+    position: sticky;
     width: 100%;
 }
+
 .footer-left {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
-    left: 0.50%;
+    left: 1.0%;
 }
 
 .footer-right {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
-    right: 0.50%;
+    right: 1.0%;
 }
