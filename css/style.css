@@ -22,7 +22,7 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 
@@ -214,9 +214,9 @@ nav {
 }
 
 .wrapped {
-    display: block;
-    float: left;
-    padding: 5px;
+    display: unset;
+    float: inline-end;
+    padding: 10px;
 }
 
 .cta {
