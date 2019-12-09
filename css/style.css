@@ -200,6 +200,7 @@ nav {
 
 .row {
     display: table-row;
+    height: 10px;
 }
 
 .col {
@@ -207,6 +208,8 @@ nav {
     border: 0px;
     border-radius: 10px;
     background-color: rgba(255, 245, 245, .6);
+    float: none;
+    text-align: left;
 }
 
 .col p {
@@ -214,15 +217,16 @@ nav {
 }
 
 .wrapped {
-    display: unset;
-    float: inline-end;
-    padding: 10px;
+    display: table-row;
+    float: center;
+    margin: 50px;
+    
 }
 
 .cta {
     width: 11rem;
     margin: auto;
-    text-align: justify;
+    text-align: end;
 }
 
 .cta-button {
@@ -231,8 +235,10 @@ nav {
     height: 40px;
     line-height: 20px;
     background: rgb(17, 168, 42);
-    color: rgb(20, 18, 116);
+    color: white;
     border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
 }
 
 footer {
